@@ -1,15 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Erick Wendel's CV</title>
+    <title>Erick Wendel — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    window.location = "files/ErickWendelCV.pdf"
-</script>
+
 <body>
-    
+    <!-- Floating interactive controls (hidden during printing) -->
+    <div class="controls no-print">
+        <button onclick="window.print()" class="btn-print" title="Print Resume to PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer"
+                viewBox="0 0 16 16">
+                <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
+                <path
+                    d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1" />
+            </svg>
+            <span>Print / Save PDF</span>
+        </button>
+    </div>
+
+    <div class="resume-container">
+        <!-- HEADER -->
+        <header class="resume-header">
+            <h1 class="name">Erick Wendel</h1>
+            <div class="subtitle">
+                <span class="role">Applied AI Engineer, Professor and Open Source Contributor</span>
+                <span class="divider">•</span>
+                <span class="location">São Paulo, Brazil</span>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:erick.workspace@gmail.com">erick.workspace@gmail.com</a>
+                <span class="dot">•</span>
+                <a href="https://erickwendel.com" target="_blank" rel="noopener">erickwendel.com</a>
+                <span class="dot">•</span>
+                <a href="https://github.com/erickwendel" target="_blank" rel="noopener">github.com/erickwendel</a>
+                <span class="dot">•</span>
+                <a href="https://linkedin.com/in/erickwendel" target="_blank"
+                    rel="noopener">linkedin.com/in/erickwendel</a>
+            </div>
+            <div class="languages">
+                <span><strong>Languages:</strong> Portuguese (Native), English (Fluent), Spanish (Fluent)</span>
+            </div>
+        </header>
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="resume-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <strong>Languages &amp; Core:</strong> <span>JavaScript (ES6+), TypeScript, Node.js,
+                        HTML5/CSS3</span>
+                </div>
+                <div class="skills-category">
+                    <strong>AI &amp; Systems:</strong> <span>Generative AI APIs, LLM Orchestration, LangChain.js, RAG,
+                        Autonomous Agents, TensorFlow.js</span>
+                </div>
+                <div class="skills-category">
+                    <strong>DevOps &amp; Cloud:</strong> <span>Kubernetes (AKS), Azure Kubernetes Service, Docker, AWS,
+                        Microsoft Azure, Serverless, CI/CD, Linux</span>
+                </div>
+                <div class="skills-category">
+                    <strong>Diagnostics &amp; Perf:</strong> <span>OpenTelemetry, Grafana, Prometheus, Loki,
+                        Observability, Performance Tuning, Memory Leak Diagnostics</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="resume-section">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-company">NodeSource</span>
+                    <span class="item-date">09/2025 – 04/2026</span>
+                </div>
+                <div class="item-meta">
+                    <span class="item-role">Applied AI Engineer (Staff), Performance Specialist</span>
+                    <span class="item-location">Full-Time (Remote)</span>
+                </div>
+                <ul class="item-bullets">
+                    <li>Built agentic diagnostic solutions using LangChain.js, MCP servers, and observability tools
+                        (Grafana, Prometheus, Loki, OpenTelemetry) to automatically correlate system telemetry and
+                        identify application bottlenecks.</li>
+                    <li>Advised enterprise customers on software design, performance, and developer tooling; contributed
+                        directly to security monitoring features in the N|Solid runtime agent.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-company">UNIPDS</span>
+                    <span class="item-date">09/2025 – Present</span>
+                </div>
+                <div class="item-meta">
+                    <span class="item-role">Postgraduate Coordinator &amp; Instructor, Applied AI Engineering</span>
+                    <span class="item-location">Lato Sensu Specialty</span>
+                </div>
+                <ul class="item-bullets">
+                    <li>Coordinated and taught MEC-recognized postgraduate specialization in Applied AI, designing
+                        production-ready AI curricula.</li>
+                    <li>Instructed advanced students on Generative AI APIs, LLM orchestrations (RAG, autonomous agents),
+                        and AI infrastructure.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-company">EW Academy</span>
+                    <span class="item-date">02/2020 – 10/2025</span>
+                </div>
+                <div class="item-meta">
+                    <span class="item-role">Main Instructor &amp; JS Specialist</span>
+                    <span class="item-location">Founder</span>
+                </div>
+                <ul class="item-bullets">
+                    <li>Trained over 100,000 developers globally, sold >10,000 tickets across 18 advanced JavaScript and
+                        Node.js courses.</li>
+                    <li>Architected and deployed production Kubernetes clusters from scratch on Azure (AKS) hosting over
+                        40 microservices.</li>
+                    <li>Delivered 140+ keynotes in 25 countries (EN, ES, PT); first to record live rebuilding of Node.js
+                        engine core from scratch.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-company">NodeSource</span>
+                    <span class="item-date">11/2021 – 04/2022</span>
+                </div>
+                <div class="item-meta">
+                    <span class="item-role">Senior Performance Engineer</span>
+                    <span class="item-location">Part-Time (Remote)</span>
+                </div>
+                <ul class="item-bullets">
+                    <li>Analyzed and troubleshot static JS source code, database queries, and Node.js architecture for
+                        high-performance scale.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item previous-exp">
+                <div class="item-header">
+                    <span class="item-company">Previous Experiences</span>
+                    <span class="item-date">05/2017 – 02/2020</span>
+                </div>
+                <div class="item-meta">
+                    <span class="item-role">Beetech Global, Horizon Four, Independent Architect</span>
+                    <span class="item-location">São Paulo, Brazil</span>
+                </div>
+                <ul class="item-bullets">
+                    <li><strong>Beetech:</strong> Core Architect for remessaonline.com.br; resolved bottlenecks and
+                        built core services in Node.js.</li>
+                    <li><strong>Independent &amp; Horizon Four:</strong> Provided Kubernetes/Serverless consulting for
+                        Microsoft, Gama, Opah, and others.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- OPEN SOURCE & KEY PROJECTS -->
+        <section class="resume-section">
+            <h2 class="section-title">Open Source &amp; Key Projects</h2>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">Node.js Core (MockTimers API)</span>
+                        <a href="https://github.com/nodejs/node/pull/47775" target="_blank" rel="noopener"
+                            class="project-link">pull/47775</a>
+                    </div>
+                    <p class="project-desc">Co-authored and introduced a new native MockTimers API into the Node.js
+                        test_runner core, allowing deterministic clock-mocking without side-effects.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">Node.js Core (Child Process Queueing)</span>
+                        <a href="https://github.com/nodejs/node/pull/41221" target="_blank" rel="noopener"
+                            class="project-link">pull/41221</a>
+                    </div>
+                    <p class="project-desc">Optimized child process IPC by queueing pending messages when communication
+                        channels are busy, resolving critical race conditions.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">myownnode</span>
+                        <a href="https://github.com/ErickWendel/myownnode" target="_blank" rel="noopener"
+                            class="project-link">ErickWendel/myownnode</a>
+                    </div>
+                    <p class="project-desc">Educational project rebuilding the core of the Node.js runtime from scratch
+                        using V8, libuv, and custom C++/JavaScript bindings.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">websockets-from-scratch</span>
+                        <a href="https://github.com/ErickWendel/websockets-with-nodejs-from-scratch" target="_blank"
+                            rel="noopener" class="project-link">websockets-from-scratch</a>
+                    </div>
+                    <p class="project-desc">Fully RFC-compliant native WebSocket protocol implementation from scratch in
+                        pure Node.js, without any external library wrappers.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">JS Expert Week 8.0 (Video Pre-Processing)</span>
+                        <a href="https://github.com/ErickWendel/semana-javascript-expert08" target="_blank" rel="noopener"
+                            class="project-link">expert08-video-pre</a>
+                    </div>
+                    <p class="project-desc">A high-performance educational project demonstrating client-side video pre-processing in the browser before upload, leveraging Canvas and WebAssembly.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">Trimly (AI Scheduling Assistant)</span>
+                        <a href="https://github.com/ErickWendel/Trimly" target="_blank" rel="noopener"
+                            class="project-link">ErickWendel/Trimly</a>
+                    </div>
+                    <p class="project-desc">An AI-powered scheduling assistant integrating Native Prompt, Translation, Text-to-Speech, and Speech-to-Text APIs to manage barber appointments effortlessly.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">JS Expert Week 7.0 (Eye &amp; Hand Control)</span>
+                        <a href="https://github.com/ErickWendel/semana-javascript-expert07" target="_blank"
+                            rel="noopener" class="project-link">expert07-eye-hand</a>
+                    </div>
+                    <p class="project-desc">Viral client-side computer-vision controller using TensorFlow.js to control
+                        media streaming platforms via gestures and eye-tracking.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-name">fingerpose (3D Hand Gestures)</span>
+                        <a href="https://github.com/andypotato/fingerpose/pull/25" target="_blank" rel="noopener"
+                            class="project-link">pull/25</a>
+                    </div>
+                    <p class="project-desc">Contributed to the core fingerpose gesture recognition library, introducing fixes for hand coordinate tracking bounds in multi-hand tracking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HONORS & ACHIEVEMENTS -->
+        <section class="resume-section">
+            <h2 class="section-title">Honors &amp; Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-badge">
+                    <strong>7x Google Developer Expert (GDE)</strong>
+                    <span>Web Technologies (2019 – Present)</span>
+                </div>
+                <div class="achievement-badge">
+                    <strong>9x Microsoft MVP</strong>
+                    <span>Web Technologies (2017 – Present)</span>
+                </div>
+                <div class="achievement-badge">
+                    <strong>3x GitHub Star</strong>
+                    <span>GitHub (2022 – 2024)</span>
+                </div>
+                <div class="achievement-badge">
+                    <strong>OpenJS Pathfinder Educator</strong>
+                    <span>OpenJS Foundation (05/2023)</span>
+                </div>
+                <div class="achievement-badge">
+                    <strong>AWS Community Builder</strong>
+                    <span>Amazon Web Services (10/2020)</span>
+                </div>
+                <div class="achievement-badge">
+                    <strong>First 50 JSNAD Certified</strong>
+                    <span>Global Cert #140 (01/2020)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <footer class="resume-footer">
+            <div class="footer-section">
+                <h3 class="footer-title">Education</h3>
+                <div class="education-item">
+                    <div class="edu-details">
+                        <strong>Postgraduate (Lato Sensu), Machine Learning Engineering</strong> — <em>Anhanguera</em>
+                    </div>
+                    <span class="footer-date">(2025 – 2026)</span>
+                </div>
+                <div class="education-item">
+                    <div class="edu-details">
+                        <strong>B.S., Software Analysis and Development</strong> — <em>Faculdade Impacta Tecnologia (FIT)</em>
+                    </div>
+                    <span class="footer-date">(2014 – 2016)</span>
+                </div>
+                <div class="last-updated">
+                    <span>Last Updated: May 2026</span>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
